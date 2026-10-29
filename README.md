@@ -2,9 +2,12 @@
 
 # Vasilij Epishkin
 
-**Bioinformatics & Cheminformatics** · **Data Science & AI Engineering**
+<img
+  src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=21&duration=3200&pause=850&color=22D3EE&center=true&vCenter=true&width=680&height=55&lines=Bioinformatics+%26+Cheminformatics;Data+Science+%26+AI+Engineering;Scientific+Software+%26+Automation"
+  alt="Typing animation cycling through my technical focus areas"
+/>
 
-Building reproducible scientific tools, molecular data pipelines and AI-powered workflows.
+**Building reproducible scientific tools, molecular data pipelines and AI-powered workflows.**
 
 </div>
 
@@ -34,15 +37,28 @@ Building reproducible scientific tools, molecular data pipelines and AI-powered 
 | **[alzheimer-rag-agent](https://github.com/VasilijEpishkin/alzheimer-rag-agent)** | RAG-assisted exploration of potential Alzheimer's disease drug targets |
 | **[EnzymeInfoCollector](https://github.com/VasilijEpishkin/EnzymeInfoCollector)** | Enzyme information collection and processing |
 
+### GitHub at a glance
+
+<div align="center">
+
+<a href="https://gitcard-studio.creativecode.com.co/">
+  <img src="https://gitcard-studio.creativecode.com.co/api/stats?username=VasilijEpishkin&theme=neon&locale=en" width="420" alt="Live GitCard Studio GitHub statistics" />
+</a>
+<img src="assets/bonsai/bonsai.gif" width="240" alt="My procedurally grown pixel-art Git Bonsai, animated by the wind" />
+
+<sub>Statistics by GitCard Studio · Bonsai grown from GitHub history and refreshed daily</sub>
+
+</div>
+
 ### Contribution activity
 
 <div align="center">
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/contribution-snake-dark.svg" />
-  <img src="assets/contribution-snake.svg" alt="Animated contribution snake eating the GitHub contribution calendar" width="100%" />
+  <img src="assets/contribution-snake.svg" alt="Animated GitHub contribution snake" width="100%" />
 </picture>
 
-<sub>Generated automatically from public GitHub contributions · Light and dark themes</sub>
+<sub>Custom light/dark animated SVG · Updated daily via GitHub Actions</sub>
 
 </div>
