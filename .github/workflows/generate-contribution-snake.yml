@@ -1,0 +1,47 @@
+name: Generate contribution snake
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '23 5 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/generate-contribution-snake.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-contribution-snake
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate light and dark contribution snakes
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: VasilijEpishkin
+          outputs: |
+            assets/contribution-snake.svg?color_snake=#6842c2&color_dots=#ebedf0,#c3e7f0,#85d2e2,#43aabb,#21788d
+            assets/contribution-snake-dark.svg?color_snake=#a78bfa&color_dots=#161b22,#123f55,#156f82,#2aa4ad,#67e8f9
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit changes only when graphics differ
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/contribution-snake.svg assets/contribution-snake-dark.svg
+          if git diff --cached --quiet; then
+            echo "Contribution graphics unchanged."
+          else
+            git commit -m "chore: refresh contribution snake [skip ci]"
+            git push
+          fi
