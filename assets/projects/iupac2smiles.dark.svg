@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 328" width="820" height="328" role="img" aria-labelledby="title desc">
+<title id="title">IUPAC → SMILES</title><desc id="desc">IUPAC to SMILES cascade pipeline diagram</desc>
+<rect width="820" height="328" rx="18" fill="#0D1117"/>
+<rect x="1" y="1" width="818" height="326" rx="17" fill="none" stroke="#2C4254" stroke-width="2"/>
+<rect x="25" y="24" width="5" height="18" rx="2.5" fill="#63D79A"/>
+<text x="42" y="39" fill="#63D79A" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="17" font-weight="700" letter-spacing="1.7">02 / CHEMINFORMATICS</text>
+<circle cx="783" cy="33" r="5" fill="#63D79A" opacity=".9"/><circle cx="759" cy="33" r="5" fill="#22D3EE" opacity=".6"/>
+<text x="28" y="92" fill="#EEF6FB" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="39" font-weight="700" >IUPAC → SMILES</text>
+<text x="29" y="126" fill="#A9BDCB" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="19" font-weight="500" >Fallback cascade: rules first, neural translators when needed</text>
+<path d="M29 148L791 148" stroke="#2C4254" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+<rect x="29" y="173" width="174" height="83" rx="11" fill="#131F2C" stroke="#2C4254" stroke-width="1.4"/>
+<text x="42" y="195" fill="#63D79A" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15" font-weight="700" >01</text>
+<text x="42" y="230" fill="#EEF6FB" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20.4" font-weight="600" >IUPAC names</text>
+<path d="M207 214H216M211 209L216 214L211 219" stroke="#63D79A" fill="none" stroke-width="2.2"/>
+<rect x="225" y="173" width="174" height="83" rx="11" fill="#131F2C" stroke="#2C4254" stroke-width="1.4"/>
+<text x="238" y="195" fill="#63D79A" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15" font-weight="700" >02</text>
+<text x="238" y="230" fill="#EEF6FB" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20.4" font-weight="600" >OPSIN</text>
+<path d="M403 214H412M407 209L412 214L407 219" stroke="#63D79A" fill="none" stroke-width="2.2"/>
+<rect x="421" y="173" width="174" height="83" rx="11" fill="#131F2C" stroke="#2C4254" stroke-width="1.4"/>
+<text x="434" y="195" fill="#63D79A" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15" font-weight="700" >03</text>
+<text x="434" y="230" fill="#EEF6FB" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="20.4" font-weight="600" >IUPAC2Struct</text>
+<path d="M599 214H608M603 209L608 214L603 219" stroke="#63D79A" fill="none" stroke-width="2.2"/>
+<rect x="617" y="173" width="174" height="83" rx="11" fill="#131F2C" stroke="#63D79A" stroke-width="2.3"/>
+<text x="630" y="195" fill="#63D79A" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="15" font-weight="700" >04</text>
+<text x="630" y="230" fill="#EEF6FB" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="17.4" font-weight="600" >ChemConv → SMILES</text>
+<rect x="29" y="279" width="6" height="6" rx="2" fill="#63D79A"/>
+<text x="44" y="289" fill="#A9BDCB" font-family="system-ui,-apple-system,Segoe UI,sans-serif" font-size="17" font-weight="500" >Fallback only after a preceding backend cannot parse</text>
+</svg>
