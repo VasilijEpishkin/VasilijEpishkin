@@ -12,20 +12,56 @@
 
 </div>
 
-### Research & Engineering
+### Scientific systems
 
-| 01 / Biological & chemical data | 02 / Data science & AI |
+A selection of projects at the intersection of computational biology, chemical data and AI engineering.
+
+<table>
+<tr>
+  <td width="50%" valign="top">
+    <a href="https://github.com/VasilijEpishkin/bcr-assembler">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/projects/bcr-assembler.dark.svg" />
+        <img src="assets/projects/bcr-assembler.light.svg" width="100%" alt="BCR sequencing simulation and assembler evaluation workflow" />
+      </picture>
+    </a>
+  </td>
+  <td width="50%" valign="top">
+    <a href="https://github.com/VasilijEpishkin/iupac2smiles">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/projects/iupac2smiles.dark.svg" />
+        <img src="assets/projects/iupac2smiles.light.svg" width="100%" alt="IUPAC chemical names to SMILES fallback cascade" />
+      </picture>
+    </a>
+  </td>
+</tr>
+<tr>
+  <td width="50%" valign="top">
+    <a href="https://github.com/VasilijEpishkin/EnzymeInfoCollector">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/projects/EnzymeInfoCollector.dark.svg" />
+        <img src="assets/projects/EnzymeInfoCollector.light.svg" width="100%" alt="Protein, reaction and compound evidence processing" />
+      </picture>
+    </a>
+  </td>
+  <td width="50%" valign="top">
+    <a href="https://github.com/VasilijEpishkin/alzheimer-rag-agent">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="assets/projects/alzheimer-rag-agent.dark.svg" />
+        <img src="assets/projects/alzheimer-rag-agent.light.svg" width="100%" alt="Biomedical literature retrieval and evidence-focused RAG architecture" />
+      </picture>
+    </a>
+  </td>
+</tr>
+</table>
+
+<sub>Click a system diagram to open its source repository. Diagrams describe implemented workflows, not performance claims.</sub>
+
+### Research & engineering
+
+| Computational biology & chemistry | Data science & AI |
 | :--- | :--- |
-| Sequencing data, BCR reconstruction, enzyme annotations, molecular representations and reproducible research workflows. | Applied ML/NLP, literature retrieval and reranking, Python tools and AI-assisted scientific analysis. |
-
-### Selected work
-
-| Project | What it solves |
-| :--- | :--- |
-| **[bcr-assembler](https://github.com/VasilijEpishkin/bcr-assembler)** | Simulates fragmented BCR sequencing reads and benchmarks sequence assemblers against known references. |
-| **[iupac2smiles](https://github.com/VasilijEpishkin/iupac2smiles)** | Translates chemical names into SMILES with a fallback cascade of rule-based and neural models. |
-| **[alzheimer-rag-agent](https://github.com/VasilijEpishkin/alzheimer-rag-agent)** | Retrieves and reranks biomedical literature for exploring potential Alzheimer's disease drug targets. |
-| **[EnzymeInfoCollector](https://github.com/VasilijEpishkin/EnzymeInfoCollector)** | Collects enzyme records, protein sequences and reaction data from ExPASy, UniProt and Rhea. |
+| Sequence reconstruction, enzyme and reaction evidence, molecular representations and reproducible data workflows. | Applied ML/NLP, retrieval and reranking, research tooling, Python automation and AI-assisted analysis. |
 
 ### Technical stack
 
@@ -42,6 +78,31 @@
 ![Linux](https://img.shields.io/badge/Linux-222222?style=flat-square&logo=linux&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
+
+### Evidence & reproducibility
+
+[![iupac2smiles CI](https://github.com/VasilijEpishkin/iupac2smiles/actions/workflows/ci.yml/badge.svg)](https://github.com/VasilijEpishkin/iupac2smiles/actions/workflows/ci.yml)
+[![EnzymeInfoCollector Python tests](https://github.com/VasilijEpishkin/EnzymeInfoCollector/actions/workflows/tests.yml/badge.svg)](https://github.com/VasilijEpishkin/EnzymeInfoCollector/actions/workflows/tests.yml)
+
+- **[IUPAC → SMILES: benchmarking](https://github.com/VasilijEpishkin/iupac2smiles#benchmark)** — documented reference-based evaluation procedure.
+- **[BCR assembly: comparison report](https://github.com/VasilijEpishkin/bcr-assembler/blob/main/docs/evaluation_history/assembler_comparison_report.md)** — experiment setup, metrics and assembler comparison.
+- **[Enzyme graph: evidence and provenance](https://github.com/VasilijEpishkin/EnzymeInfoCollector/blob/main/docs/architecture/graph_export.md)** — source assertions, identifiers, releases and graph export.
+- **[Biomedical RAG: acceptance criteria](https://github.com/VasilijEpishkin/alzheimer-rag-agent/blob/main/docs/ACCEPTANCE.md)** — tests and remaining evaluation requirements, including incomplete validation.
+
+<details>
+<summary><strong>Explore the enzyme evidence-graph schema</strong></summary>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/projects/evidence-network.dark.svg" />
+  <img src="assets/projects/evidence-network.light.svg" alt="Synthetic evidence graph with protein, reaction, resolved and unresolved ChEBI compounds" width="100%" />
+</picture>
+
+This visualization reproduces the **synthetic demo structure** bundled with
+[EnzymeInfoCollector's local explorer](https://github.com/VasilijEpishkin/EnzymeInfoCollector/tree/main/explorer).
+It is **not experimental biological evidence**. In real data, a `CATALYZES` edge requires a direct source annotation;
+sharing an EC classification never establishes catalysis. Unresolved compounds remain explicit.
+
+</details>
 
 ### GitHub activity · Development telemetry
 
