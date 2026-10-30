@@ -1,0 +1,36 @@
+name: Generate Research Activity Dashboard
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '31 5 * * *'
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/generate-activity-dashboard.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-activity-dashboard
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout profile repository
+        uses: actions/checkout@v4
+
+      - name: Generate isometric contributions and commit cadence
+        uses: seijikohara/profile-cards-action@v1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          username: VasilijEpishkin
+          cards: contributions,cadence
+          themes: light,dark
+          palette: blue
+          output-dir: assets/activity
+          commit: true
+          commit-message: "chore: refresh research activity dashboard [skip ci]"
