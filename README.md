@@ -89,20 +89,7 @@ A selection of projects at the intersection of computational biology, chemical d
 - **[Enzyme graph: evidence and provenance](https://github.com/VasilijEpishkin/EnzymeInfoCollector/blob/main/docs/architecture/graph_export.md)** — source assertions, identifiers, releases and graph export.
 - **[Biomedical RAG: acceptance criteria](https://github.com/VasilijEpishkin/alzheimer-rag-agent/blob/main/docs/ACCEPTANCE.md)** — tests and remaining evaluation requirements, including incomplete validation.
 
-<details>
-<summary><strong>Explore the enzyme evidence-graph schema</strong></summary>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/projects/evidence-network.dark.svg" />
-  <img src="assets/projects/evidence-network.light.svg" alt="Synthetic evidence graph with protein, reaction, resolved and unresolved ChEBI compounds" width="100%" />
-</picture>
-
-This visualization reproduces the **synthetic demo structure** bundled with
-[EnzymeInfoCollector's local explorer](https://github.com/VasilijEpishkin/EnzymeInfoCollector/tree/main/explorer).
-It is **not experimental biological evidence**. In real data, a `CATALYZES` edge requires a direct source annotation;
-sharing an EC classification never establishes catalysis. Unresolved compounds remain explicit.
-
-</details>
 
 ### GitHub activity · Development telemetry
 
