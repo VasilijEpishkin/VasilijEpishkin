@@ -43,19 +43,31 @@
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white)
 
-### GitHub activity
+### GitHub activity · Development telemetry
 
 <div align="center">
 
 <a href="https://gitcard-studio.creativecode.com.co/">
-  <img src="https://gitcard-studio.creativecode.com.co/api/stats?username=VasilijEpishkin&theme=dark&locale=en" width="470" alt="Dynamic GitHub statistics by GitCard Studio" />
+  <img src="https://gitcard-studio.creativecode.com.co/api/stats?username=VasilijEpishkin&theme=dark&locale=en" width="470" alt="Live GitHub statistics" />
 </a>
 
+</div>
+
+**Contribution landscape** · An isometric view of the past year's activity.
+
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/contribution-snake-dark.svg" />
-  <img src="assets/contribution-snake.svg" alt="GitHub contribution snake, generated from the contribution calendar" width="100%" />
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity/contributions.dark.svg" />
+  <img src="assets/activity/contributions.light.svg" width="100%" alt="Isometric 3D contribution calendar generated from GitHub activity" />
 </picture>
 
-<sub>Contribution animation updates daily via GitHub Actions.</sub>
+<details>
+<summary><strong>Commit cadence · Weekday × hour heatmap</strong></summary>
 
-</div>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/activity/cadence.dark.svg" />
+  <img src="assets/activity/cadence.light.svg" width="100%" alt="Heatmap of authored commits by weekday and hour, with timing distributions" />
+</picture>
+
+</details>
+
+<sub>Graphs are generated from GitHub activity each day; the cadence chart covers commits visible to the generator, not all work performed offline.</sub>
