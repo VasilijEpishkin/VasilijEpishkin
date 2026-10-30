@@ -48,7 +48,10 @@
 <div align="center">
 
 <a href="https://gitcard-studio.creativecode.com.co/">
-  <img src="https://gitcard-studio.creativecode.com.co/api/stats?username=VasilijEpishkin&theme=dark&locale=en" width="470" alt="Live GitHub statistics" />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://gitcard-studio.creativecode.com.co/api/stats?username=VasilijEpishkin&amp;theme=dark&amp;locale=en" />
+    <img src="https://gitcard-studio.creativecode.com.co/api/stats?username=VasilijEpishkin&amp;theme=light&amp;locale=en" width="470" alt="Live GitHub statistics" />
+  </picture>
 </a>
 
 </div>
